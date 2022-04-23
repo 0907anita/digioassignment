@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecondPage</title>
+    <link rel="stylesheet" href="nextpage.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat Brush' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="nextpage2.js" href></script>
+</head>
+<body>
+    <div class="container-fluid heading">
+        <div class="row py-3" >
+            <div style="float: left; width: 90%;" >
+                <h2 style="color: black;" rel='stylesheet'>Register Aadhaar</h2>
+            </div>
+      </div>
+    </div>
+    <div class="container">
+         <div class=" row col-sm-12">
+            <div>
+                <img src="aadhaar.png" style="height:70px; float: left;" alt="">
+            </div>
+            <form  id="form">
+               <div style="text-align: center;">
+                        <input type="text" onkeydown="validationAadhaar()" name="aadhaar" id="aadhaar" maxlength="12" style="height: 40px; width: 300px;">
+                        <!-- <span id="text"></span> -->
+                        <button type="button" style="color: aliceblue; height: 40px; width: 80px;; background-color: rgb(138,143,149); border: none;" class="btn btn-info">Verify</button>
+                        <br>
+                        <input type="checkbox" name="check" style="width: 20px; height: 20px; margin-right: 5px; margin-top: 5px;" value="12" required>I agree to eSign this <span style="text-decoration: underline;">KYC document</span> to get <br> started
+                        <br> 
+                        <br>
+                        <input type="text" onkeydown="validationOtp()" maxlength="6" name ="otp" id = "otp" style="height: 40px; width: 120px; margin-right: 50px;" required>
+                        <button type="button" style="color: aliceblue; height: 40px; width: 80px; background-color: rgb(138,143,149); border: none;" class="btn btn-info" onclick="location.href='nextpage3.html'">Submit</button>
+               </div>
+            </form>
+              <!-- <div>
+                  <input type="number" style="height: 40px; width: 100px;">
+                  <button type="button" style="color: aliceblue; height: 40px; width: 80px;; background-color: rgb(138,143,149); border: none;" class="btn btn-info">Submit</button>
+              </div> -->
+           </div>
+     </div>
+     <br>
+     <!-- <button type="button" style="width: 200px; margin-left: 250px;" class="btn btn-primary" onclick="location.href='nextpage3.html'">Request OTP to Sign</button> -->
+</body>
+</html>

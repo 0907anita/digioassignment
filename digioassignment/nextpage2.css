@@ -1,0 +1,15 @@
+.heading{
+    /* height: 60px; */
+    height: 100px;
+    background-color: aqua;
+    padding: 10px 10px;
+    
+    box-sizing: border-box;
+    border-radius: 5px dimgrey;
+}
+.container{
+    /* background-color: lightgrey; */
+    width: 300px;
+    padding: 50px;
+    margin: 10px;
+  }
